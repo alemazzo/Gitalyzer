@@ -1,0 +1,27 @@
+{
+  "name": "gitalyzer",
+  "version": "1.0.0",
+  "description": "Gitalyzer",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemazzo/Gitalyzer.git"
+  },
+  "author": "Alessandro Mazzoli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alemazzo/Gitalyzer/issues"
+  },
+  "homepage": "https://github.com/alemazzo/Gitalyzer#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
