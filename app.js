@@ -2,7 +2,7 @@
 const express = require('express');
 const ejs = require('ejs');
 // Routes
-const gitApiRoutes = require('./routes/gitApi');
+const gitApiRoutes = require('./routes/api/user');
 
 // Express app
 const app = express()
