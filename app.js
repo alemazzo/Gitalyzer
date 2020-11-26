@@ -8,10 +8,11 @@ const apiRepoRoutes = require('./routes/api/repo');
 const app = express()
 
 // View engine setup 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 
 // Set static folder
-app.use(express.static('static'));
+app.use(express.static('static'))
+app.set('static', __dirname + 'static')
 
 
 app.use('/api/', [apiUserRoutes, apiRepoRoutes]);
