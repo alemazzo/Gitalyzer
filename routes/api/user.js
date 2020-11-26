@@ -1,5 +1,5 @@
 const GitHub = require('github-api');
-const apiKey = require('../config').apiKey;
+const apiKey = require('../../config').apiKey;
 
 const routes = require('express').Router();
 // basic auth

@@ -13,9 +13,14 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <style>
         #particles-js {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
             background-color: white;
-            height: 100%;
-            width: 100%;
+            overflow: hidden;
+
         }
 
         #typewriter {
@@ -74,15 +79,15 @@
     </style>
 </head>
 
-<body id="particles-js">
-
+<body>
+    <div id="particles-js"></div>
     <div class="center-top">
         <div class="fullwidth-center">
             <div id="type-title"></div>
         </div>
     </div>
     <div class="center-center">
-        <input class=" username" id="username" type="text" placeholder="Insert a GitHub nickname">
+        <input class="username" id="username" type="text" placeholder="Insert a GitHub nickname">
     </div>
 
 

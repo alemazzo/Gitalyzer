@@ -18,8 +18,6 @@ app.use(express.static('static'));
 
 
 
-
-
 app.use('/api/', gitApiRoutes);
 
 app.get('/', (req, res) => {
