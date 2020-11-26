@@ -2,8 +2,8 @@
 const express = require('express');
 const ejs = require('ejs');
 // Routes
-const gitApiRoutes = require('./routes/gitApi');
-
+const apiUserRoutes = require('./routes/api/user');
+const apiRepoRoutes = require('./routes/api/repo');
 // Express app
 const app = express()
 
@@ -14,13 +14,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('static'));
 
 
-
-
-
-
-
-
-app.use('/api/', gitApiRoutes);
+app.use('/api/', [apiUserRoutes, apiRepoRoutes]);
 
 app.get('/', (req, res) => {
     res.render('home');
